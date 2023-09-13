@@ -19,7 +19,7 @@ const components: JSXMapSerializer = {
     </Heading>
   ),
   paragraph: ({ children }) => (
-    <p className="max-w-xl mx-auto text-slate-600 font-body text-base md:text-2xl font-normal leading-7 md:leading-10 text-center">
+    <p className="max-w-xl mx-auto text-slate-600 font-body self-stretch text-2xl font-normal leading-10 text-center">
       {children}
     </p>
   ),
@@ -36,18 +36,20 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
     <Bounded
+      as="header"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="md:px-44"
     >
-      <PrismicRichText field={slice.primary.heading} components={components} />
-      <PrismicRichText field={slice.primary.body} components={components} />
-      <Button field={slice.primary.button_link} className="mt-6 md:mt-8">
-        {slice.primary.button_text}
-      </Button>
+      <div className="w-11/12 mx-auto">
+        <PrismicRichText field={slice.primary.heading} components={components} />
+        <PrismicRichText field={slice.primary.body} components={components} />
+        <Button field={slice.primary.button_link} className="mt-8">
+          {slice.primary.button_text}
+        </Button>
+      </div>
       <PrismicNextImage
         field={slice.primary.image}
-        className="max-w-4xl w-full drop-shadow-xl mt-20 md:mt-[6.5rem]"
+        className="max-w-[58.5rem] w-full drop-shadow-xl mt-4 md:mt-[6.5rem]"
       />
     </Bounded>
   );

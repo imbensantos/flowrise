@@ -18,7 +18,7 @@ function Heading({
     <Comp
       className={clsx(
         "text-slate-700 text-center font-display font-bold md:mb-8 mb-4 mt-12 first:mt-0 last:mb-0",
-        size === "xl" && "text-5xl md:text-7xl leading-[3rem] md:leading-[5rem]",
+        size === "xl" && "text-5xl md:text-7xl leading-[3.75rem] md:leading-[5rem]",
         size === "lg" && "text-4xl md:text-5xl",
         size === "md" && "text-3xl md:text-4xl",
         size === "sm" && "text-2xl md:text-3xl",

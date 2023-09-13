@@ -40,7 +40,9 @@ export default function RootLayout({
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
       <body>
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer />
         </body>
     </html>
