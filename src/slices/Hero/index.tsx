@@ -1,6 +1,6 @@
 import Bounded from "@/components/Bounded";
-import Button from "@/components/Button";
 import Heading from "@/components/Heading";
+import Button from "@/components/Button";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import {
@@ -14,7 +14,7 @@ import {
  */
 const components: JSXMapSerializer = {
   heading1: ({ children }) => (
-    <Heading as="h1" size="xl" className="md:mb-2 balance">
+    <Heading as="h1" size="xl" className="md:mb-2 mb-4 mt-12 balance">
       {children}
     </Heading>
   ),
