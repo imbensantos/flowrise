@@ -8,7 +8,7 @@ type BoundedProps = {
 
 function Bounded({as: Comp = "section", className, children, ...props}: BoundedProps) {
   return (
-    <Comp className={clsx("flex flex-col px-4 py-10 md:px-32 md:py-20 items-center justify-center", className)} {...props}>{children}</Comp>
+    <Comp className={clsx("px-4 py-10 md:px-32 md:py-20 items-center justify-center", className)} {...props}>{children}</Comp>
   )
 }
 

@@ -19,7 +19,7 @@ const components: JSXMapSerializer = {
     </Heading>
   ),
   paragraph: ({ children }) => (
-    <p className="max-w-xl mx-auto text-slate-600 font-body self-stretch text-2xl font-normal leading-10 text-center">
+    <p className="max-w-xl mx-auto text-slate-600 font-body self-stretch text-2xl font-normal leading-10">
       {children}
     </p>
   ),
@@ -35,23 +35,50 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
-    <Bounded
-      as="header"
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-    >
-      <div className="w-11/12 mx-auto">
-        <PrismicRichText field={slice.primary.heading} components={components} />
-        <PrismicRichText field={slice.primary.body} components={components} />
-        <Button field={slice.primary.button_link} className="mt-8">
-          {slice.primary.button_text}
-        </Button>
-      </div>
-      <PrismicNextImage
-        field={slice.primary.image}
-        className="max-w-[58.5rem] w-full drop-shadow-xl mt-4 md:mt-[6.5rem]"
-      />
-    </Bounded>
+
+    <>
+      {slice.variation === "default" ? (
+        <Bounded
+          as="header"
+          data-slice-type={slice.slice_type}
+          data-slice-variation={slice.variation}
+          className="flex flex-col text-center"
+        >
+          <div className="w-11/12 mx-auto">
+            <PrismicRichText field={slice.primary.heading} components={components} />
+            <PrismicRichText field={slice.primary.body} components={components} />
+            <Button field={slice.primary.button_link} className="mt-8">
+              {slice.primary.button_text}
+            </Button>
+          </div>
+          <PrismicNextImage
+            field={slice.primary.image}
+            className="max-w-[58.5rem] w-full drop-shadow-xl mt-4 md:mt-[6.5rem]"
+          />
+        </Bounded>
+      ) : null}
+      
+      {slice.variation === "horizontal" ? (
+        <Bounded
+          as="header"
+          data-slice-type={slice.slice_type}
+          data-slice-variation={slice.variation}
+          className="flex flex-col-reverse md:flex-row gap-4 md:gap-32 md:px-[6.75rem]"
+        >
+          <div className="w-11/12 mx-auto">
+            <PrismicRichText field={slice.primary.heading} components={components} />
+            <PrismicRichText field={slice.primary.body} components={components} />
+            <Button field={slice.primary.button_link} className="mt-6 mx-0">
+              {slice.primary.button_text}
+            </Button>
+          </div>
+          <PrismicNextImage
+            field={slice.primary.image}
+            className="max-w-[36.44rem] max-h-[27.75rem] object-fill w-full drop-shadow-xl rounded-2xl"
+          />
+        </Bounded>
+      ) : null}
+    </>
   );
 };
 
