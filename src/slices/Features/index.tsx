@@ -23,7 +23,7 @@ const components: JSXMapSerializer = {
     </Heading>
   ),
   paragraph: ({children}) => (
-    <p className="text-slate-600 font-body text-base leading-8 text-center lg:text-left">
+    <p className="text-slate-600 font-body text-base leading-8 text-center lg:text-left balance">
       {children}
     </p>
   )
