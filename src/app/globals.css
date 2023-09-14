@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer components{
-  .container{
-    @apply flex flex-col px-4 py-10 md:px-32 md:py-20 items-center justify-center;
+  .bounded{
+    @apply flex flex-col max-w-full px-4 py-10 md:px-32 md:py-20 items-center justify-center text-center;
+  }
+}
+
+@layer utilities{
+  .balance{
+    text-wrap: balance;
   }
 }

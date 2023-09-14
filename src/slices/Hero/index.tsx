@@ -14,12 +14,12 @@ import {
  */
 const components: JSXMapSerializer = {
   heading1: ({ children }) => (
-    <Heading as="h1" size="xl" className="md:mb-2">
+    <Heading as="h1" size="xl" className="md:mb-2 balance">
       {children}
     </Heading>
   ),
   paragraph: ({ children }) => (
-    <p className="max-w-xl mx-auto text-slate-600 font-body self-stretch text-2xl font-normal leading-10">
+    <p className="mx-auto text-slate-600 font-body self-stretch text-2xl font-normal leading-10 balance">
       {children}
     </p>
   ),
@@ -44,7 +44,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           data-slice-variation={slice.variation}
           className="flex flex-col text-center"
         >
-          <div className="w-11/12 mx-auto">
+          <div className="w-[min(49.15rem,64vw)] mx-auto">
             <PrismicRichText field={slice.primary.heading} components={components} />
             <PrismicRichText field={slice.primary.body} components={components} />
             <Button field={slice.primary.button_link} className="mt-8">
@@ -65,7 +65,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           data-slice-variation={slice.variation}
           className="flex flex-col-reverse md:flex-row gap-4 md:gap-32 md:px-[6.75rem]"
         >
-          <div className="w-11/12 mx-auto">
+          <div className="w-11/12 mx-auto text-left">
             <PrismicRichText field={slice.primary.heading} components={components} />
             <PrismicRichText field={slice.primary.body} components={components} />
             <Button field={slice.primary.button_link} className="mt-6 mx-0">
