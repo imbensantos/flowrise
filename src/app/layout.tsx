@@ -45,7 +45,7 @@ export default function RootLayout({
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
       <body className='bg-gradient-default'>
         <Header />
-        <main >
+        <main className="overflow-x-clip">
           {children}
         </main>
         <Footer />
