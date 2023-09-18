@@ -1,6 +1,18 @@
+# Flowrise
+
+Flowrise is an elegant, animated, and responsive website that seamlessly integrates with a headless CMS to manage its contents.
+
+## Demo Link: 🔗 
+You can view it here: [Flowrise-ImBenSantos](https://flowrise-imbensantos.vercel.app/)
+
+
+## Approach: 🚶
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+I used `Figma` to slice the design, `Tailwind` to handle the aesthetics, `AOS` for the animations, and `Prismic` to manage the contents--all the while using `Typescript` to code the components and slices.
+
+
+## Getting Started 💻
 
 First, run the development server:
 
@@ -32,3 +44,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Credits 🎞
+Huge shout out to [Prismic](https://www.youtube.com/@Prismic) for creating this amazing tutorial! ♥
