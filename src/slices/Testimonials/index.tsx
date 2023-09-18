@@ -14,7 +14,7 @@ const components: JSXMapSerializer = {
     </Heading>
   ),
   paragraph: ({children}) => (
-    <p className="text-slate-600 font-body text-xl md:text-2xl leading-10 text-left mb-8 balance">
+    <p className="text-slate-600 font-body text-xl md:text-2xl leading-10 mb-8 balance lg:text-left">
       {children}
     </p>
   )
@@ -48,7 +48,7 @@ const Testimonials = async ({ slice }: TestimonialsProps): Promise<JSX.Element> 
       <PrismicRichText field={slice.primary.heading} components={components} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => testimonial ? (
-          <article key={index} className="grid content-between px-8 md:px-14 py-10 md:py-16 rounded-lg border border-slate-50 bg-white drop-shadow-xl">
+          <article key={index} className="grid justify-items-center lg:justify-items-start lg:items-start content-between px-8 md:px-14 py-10 md:py-16 rounded-lg border border-slate-50 bg-white drop-shadow-xl">
             <PrismicRichText field={testimonial.data.quote} components={components} />
             <footer className="flex gap-4 items-center">
               <PrismicNextImage field={testimonial.data.avatar} width={56} height={56} className="rounded-full" imgixParams={{ar: "1:1", fit:"crop"}} />
