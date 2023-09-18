@@ -54,6 +54,7 @@ const Testimonials = async ({
     >
       <div
         data-aos="fade-down"
+        id="testimonials"
       >
         <PrismicRichText
           field={slice.primary.heading}
@@ -68,7 +69,7 @@ const Testimonials = async ({
               className="grid justify-items-center lg:justify-items-start lg:items-start content-between px-8 md:px-14 py-10 md:py-16 rounded-lg border border-slate-50 bg-white drop-shadow-xl"
               data-aos="flip-left"
               data-aos-delay={100 * (index + 1)}
-    
+              data-aos-anchor="#testimonials"
             >
               <PrismicRichText
                 field={testimonial.data.quote}

@@ -50,6 +50,7 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
     >
       <div
         data-aos="fade-down"
+        id="features"
       >
         <PrismicRichText
           field={slice.primary.heading}
@@ -63,6 +64,7 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
             className="max-w-xs grid place-items-center lg:place-items-start gap-5"
             data-aos="zoom-out"
             data-aos-delay={150 * (index + 1)}
+            data-aos-anchor="#features"
           >
             {item.icon ? Icons[item.icon] : null}
             <PrismicRichText field={item.title} components={components} />
