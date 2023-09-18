@@ -37,6 +37,7 @@ const TextWithImage = ({ slice }: TextWithImageProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-32"
+      data-aos={slice.variation === "imageRight" ? "fade-left" : "fade-right"}
     >
       <PrismicNextImage
         field={slice.primary.image}
@@ -45,7 +46,9 @@ const TextWithImage = ({ slice }: TextWithImageProps): JSX.Element => {
           slice.variation === "imageRight" && "md:order-2"
         )}
       />
-      <hgroup className="text-left max-w-md">
+      <hgroup
+        className="text-left max-w-md"
+      >
         <PrismicRichText
           field={slice.primary.heading}
           components={components}
