@@ -1,9 +1,9 @@
 # Flowrise
 
-Flowrise is an elegant, animated, and responsive website that seamlessly integrates with a headless CMS to manage its contents.
+Flowrise is an elegant, animated, and responsive website that seamlessly integrates a headless CMS in managing its contents.
 
 ## Demo Link: 🔗 
-You can view it here: [Flowrise-ImBenSantos](https://flowrise-imbensantos.vercel.app/)
+You can view it here: [ImBenSantos-Flowrise](https://imbensantos-flowrise.vercel.app/)
 
 
 ## Approach: 🚶
