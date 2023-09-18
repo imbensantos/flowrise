@@ -42,7 +42,7 @@ const TextWithImage = ({ slice }: TextWithImageProps): JSX.Element => {
       <PrismicNextImage
         field={slice.primary.image}
         className={clsx(
-          "w-full max-w-xl rounded-lg",
+          "w-full max-w-xl rounded-lg min-w-[15rem]",
           slice.variation === "imageRight" && "md:order-2"
         )}
       />
