@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
-      <body className='bg-gradient-to-tr from-emerald-50/50 to-cyan-50/50'>
+      <body className='body-bgGradient'>
         <Header />
         <main >
           {children}
