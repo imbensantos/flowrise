@@ -44,7 +44,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           data-slice-variation={slice.variation}
           className="flex flex-col text-center"
         >
-          <div className="w-[min(49.15rem,64vw)] mx-auto">
+          <div className="w-[min(49.15rem,84vw)] mx-auto">
             <PrismicRichText field={slice.primary.heading} components={components} />
             <PrismicRichText field={slice.primary.body} components={components} />
             <Button field={slice.primary.button_link} className="mt-8">

@@ -36,12 +36,12 @@ const TextWithImage = ({ slice }: TextWithImageProps): JSX.Element => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col md:flex-row gap-4 md:gap-24 lg:gap-34"
+      className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-32"
     >
       <PrismicNextImage
         field={slice.primary.image}
         className={clsx(
-          "w-full md:max-w-xl rounded-lg",
+          "w-full max-w-xl rounded-lg",
           slice.variation === "imageRight" && "md:order-2"
         )}
       />
