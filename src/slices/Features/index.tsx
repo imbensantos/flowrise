@@ -57,11 +57,11 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
           components={components}
         />
       </div>
-      <ul className="max-w-5xl grid sm:grid-cols-2 lg:grid-cols-4 mx-auto place-items-center lg:place-items-start gap-x-8 gap-y-12">
+      <ul className="max-w-5xl grid sm:grid-cols-2 lg:grid-cols-4 mx-auto items-start justify-items-center lg:place-items-start gap-x-8 gap-y-12">
         {slice.items.map((item, index) => (
           <li
             key={index}
-            className="max-w-xs grid place-items-center lg:place-items-start gap-5"
+            className="max-w-xs grid place-items-center lg:place-items-start gap-5 text-center lg:text-left"
             data-aos="zoom-out"
             data-aos-delay={150 * (index + 1)}
             data-aos-anchor="#features"
