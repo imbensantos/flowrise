@@ -1,17 +1,12 @@
 
-"use client";
-
 import './globals.css'
 import 'aos/dist/aos.css';
 
-import { useEffect } from "react";
 import type { Metadata } from 'next'
-
-import clsx from 'clsx'
-import AOS from 'aos'
 import { Nunito, Nunito_Sans } from 'next/font/google'
 import { createClient, repositoryName } from '@/prismicio'
 import { PrismicPreview } from '@prismicio/next'
+import clsx from 'clsx'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -46,13 +41,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  useEffect(()=>{
-    AOS.init({
-      duration: 1000,
-      offset: 100,
-      once: true,
-    });
-  }, [])
   return (
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
       <body className='bg-gradient-default'>
