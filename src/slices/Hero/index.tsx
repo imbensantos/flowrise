@@ -63,18 +63,18 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           as="header"
           data-slice-type={slice.slice_type}
           data-slice-variation={slice.variation}
-          className="flex flex-col-reverse md:flex-row gap-4 md:gap-32 md:px-[6.75rem]"
+          className="flex flex-col-reverse md:flex-row gap-4 lg:gap-16 lg:px-[4.75rem]"
         >
-          <div className="w-11/12 mx-auto text-left">
+          <div className="w-11/12 mx-auto text-center md:text-left">
             <PrismicRichText field={slice.primary.heading} components={components} />
             <PrismicRichText field={slice.primary.body} components={components} />
-            <Button field={slice.primary.button_link} className="mt-6 mx-0">
+            <Button field={slice.primary.button_link} className="mt-6 md:mx-0">
               {slice.primary.button_text}
             </Button>
           </div>
           <PrismicNextImage
             field={slice.primary.image}
-            className="max-w-[36.44rem] max-h-[27.75rem] object-fill w-full drop-shadow-xl rounded-2xl"
+            className="min-w-[15rem] max-w-[36.44rem] max-h-[27.75rem] object-fill w-full drop-shadow-xl rounded-2xl"
           />
         </Bounded>
       ) : null}

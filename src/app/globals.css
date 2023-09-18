@@ -7,10 +7,52 @@
     @apply max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-14 lg:py-16 items-center justify-center text-center flex flex-col;
   }
   .bg-gradient-default {
-    background: rgb(222,244,254);
-    background: -moz-linear-gradient(145deg, rgba(222,244,254,0.25) 0%, rgba(222,235,254,0.25) 30%, rgba(222,244,252,0.25) 55%, rgba(222,252,243,0.25) 81%, rgba(239,255,235,0.25) 93%, rgba(229,250,231,0.25) 100%);
-    background: -webkit-linear-gradient(145deg, rgba(222,244,254,0.25) 0%, rgba(222,235,254,0.25) 30%, rgba(222,244,252,0.25) 55%, rgba(222,252,243,0.25) 81%, rgba(239,255,235,0.25) 93%, rgba(229,250,231,0.25) 100%);
-    background: linear-gradient(145deg, rgba(222,244,254,0.25) 0%, rgba(222,235,254,0.25) 30%, rgba(222,244,252,0.25) 55%, rgba(222,252,243,0.25) 81%, rgba(239,255,235,0.25) 93%, rgba(229,250,231,0.25) 100%);
+    background: rgb(222, 244, 254);
+    background: -moz-linear-gradient(
+      145deg,
+      rgba(222, 244, 254, 0.25) 0%,
+      rgba(222, 235, 254, 0.25) 8%,
+      rgba(222, 244, 252, 0.25) 16%,
+      rgba(222, 252, 243, 0.25) 24%,
+      rgba(239, 255, 235, 0.25) 32%,
+      rgba(229, 250, 231, 0.25) 40%,
+      rgba(222, 244, 254, 0.25) 48%,
+      rgba(222, 235, 254, 0.25) 56%,
+      rgba(222, 244, 252, 0.25) 64%,
+      rgba(222, 252, 243, 0.25) 72%,
+      rgba(239, 255, 235, 0.25) 80%,
+      rgba(229, 250, 231, 0.25) 88%
+    );
+    background: -webkit-linear-gradient(
+      145deg,
+      rgba(222, 244, 254, 0.25) 0%,
+      rgba(222, 235, 254, 0.25) 8%,
+      rgba(222, 244, 252, 0.25) 16%,
+      rgba(222, 252, 243, 0.25) 24%,
+      rgba(239, 255, 235, 0.25) 32%,
+      rgba(229, 250, 231, 0.25) 40%,
+      rgba(222, 244, 254, 0.25) 48%,
+      rgba(222, 235, 254, 0.25) 56%,
+      rgba(222, 244, 252, 0.25) 64%,
+      rgba(222, 252, 243, 0.25) 72%,
+      rgba(239, 255, 235, 0.25) 80%,
+      rgba(229, 250, 231, 0.25) 88%
+    );
+    background: linear-gradient(
+      145deg,
+      rgba(222, 244, 254, 0.25) 0%,
+      rgba(222, 235, 254, 0.25) 8%,
+      rgba(222, 244, 252, 0.25) 16%,
+      rgba(222, 252, 243, 0.25) 24%,
+      rgba(239, 255, 235, 0.25) 32%,
+      rgba(229, 250, 231, 0.25) 40%,
+      rgba(222, 244, 254, 0.25) 48%,
+      rgba(222, 235, 254, 0.25) 56%,
+      rgba(222, 244, 252, 0.25) 64%,
+      rgba(222, 252, 243, 0.25) 72%,
+      rgba(239, 255, 235, 0.25) 80%,
+      rgba(229, 250, 231, 0.25) 88%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#def4fe",endColorstr="#e5fae7",GradientType=1);
   }
 }
