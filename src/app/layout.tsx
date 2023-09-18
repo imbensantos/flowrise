@@ -2,7 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import clsx from 'clsx'
 import { Nunito, Nunito_Sans } from 'next/font/google'
-import { createClient } from '@/prismicio'
+import { createClient, repositoryName } from '@/prismicio'
+import { PrismicPreview } from '@prismicio/next'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -38,12 +40,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
-      <body className='body-bgGradient'>
+      <body className='bg-gradient-default'>
         <Header />
         <main >
           {children}
         </main>
         <Footer />
+        <PrismicPreview repositoryName={repositoryName} />
         </body>
     </html>
   )
